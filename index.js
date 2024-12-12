@@ -17,7 +17,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.ORIGIN, // Specify the frontend's ORIGIN
+    origin: process.env.ORIGIN || "https://lululemon-clone-git-main-sonu-7891s-projects.vercel.app/", // Specify the frontend's ORIGIN
     credentials: true,
   })
 );
